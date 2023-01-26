@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="css/modern-normalize.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>goit-markup-hw-06</title>
+    <title>goit-markup-hw-05</title>
   </head>
   <body>
     <div class="line">
@@ -388,8 +388,8 @@
     <!------------------ FOOTER ------------------>
     <footer id="footer" class="footer section">
       <div class="container">
-        <div class="footer__items">
-          <div class="footer__item">
+        <ul class="footer__items">
+          <li class="footer__item">
             <!-- LOGO -->
             <a href="index.html" class="logo footer__logo"
               ><span class="logo-design--color">Web</span>Studio</a
@@ -416,12 +416,10 @@
                 </li>
               </ul>
             </address>
-          </div>
-          <div class="footer__item">
+          </li>
+          <li class="footer__item">
             <div class="join-us">
-              <div class="join-us__heading">
-                <p>DOŁĄCZ DO NAS</p>
-              </div>
+              <p class="join-us__heading form__headings">DOŁĄCZ DO NAS</p>
               <ul class="social-links">
                 <li class="social-links__logo instagram--icon">
                   <a class="social-links__link" href="#">
@@ -453,117 +451,12 @@
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <!------- CONTACT FORM ------->
-
-        <form class="form_contact">
-          <h2 class="form_heading">Zostaw swoje dane w formularzu poniżej</h2>
-
-          <ul class="form_list">
-            <!---- NAME ---->
-            <li class="form_item">
-              <!-- li heading -->
-              <label class="input-heading name" for="name">Imie</label>
-              <!-- animate inputs container -->
-              <div class="animate-inputs__container name">
-                <!-- relative container for svg -->
-                <div class="form__container">
-                  <!-- input -->
-                  <input class="text-input" type="text" name="name" id="name" />
-                  <!-- SVG -->
-                  <div class="modal__svg--icon">
-                    <svg width="18" height="18">
-                      <use href="images/icons.svg#person-icon"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <!---- TELEPHONE ---->
-            <li class="form_item">
-              <!-- li heading -->
-              <label class="input-heading telephone" for="phone">Telefon</label>
-              <!-- animate inputs container -->
-              <div class="animate-inputs__container telephone">
-                <!-- relative container for svg -->
-                <div class="form__container">
-                  <!-- input -->
-                  <input
-                    class="text-input"
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                  />
-                  <!-- SVG -->
-                  <div class="modal__svg--icon">
-                    <svg width="18" height="18">
-                      <use href="images/icons.svg#phone-icon"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <!---- EMAIL ---->
-            <li class="form_item">
-              <!-- li heading -->
-              <label class="input-heading email" for="email">Email</label>
-              <!-- animate inputs container -->
-              <div class="animate-inputs__container email">
-                <!-- relative container for svg -->
-                <div class="form__container">
-                  <!-- input -->
-                  <input
-                    class="text-input"
-                    type="email"
-                    name="email"
-                    id="email"
-                  />
-                  <!-- SVG -->
-                  <div class="modal__svg--icon">
-                    <svg width="18" height="18">
-                      <use href="images/icons.svg#email-icon"></use>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <!---- TEXT ---->
-            <li class="form_item">
-              <!-- li heading -->
-              <label class="input-heading text" for="comment">Komentarz</label>
-              <!-- animate inputs container -->
-              <div class="animate-inputs__container text">
-                <!-- textarea -->
-                <textarea
-                  class="text-input comment-section"
-                  placeholder="Wprowadź tekst"
-                  id="comment"
-                ></textarea>
-              </div>
-            </li>
-            <div class="rules-acceptation">
-              <input
-                class="rules-checkbox"
-                type="checkbox"
-                id="rules-checkbox"
-              />
-              <label for="rules-checkbox">
-                Oświadczam iż akceptuję
-                <a href="#" class="rules-acceptation__link"> Regulamin </a>i
-                <a href="#" class="rules-acceptation__link">
-                  Politykę Prywatności.</a
-                ></label
-              >
-            </div>
-            <button type="submit" class="submit__button">Wyślij</button>
-          </ul>
-        </form>
-
         <!------- BUTTON TO CLOSE MODAL WINDOW ------->
 
         <button type="button" class="modal__button--close" data-modal-close>
